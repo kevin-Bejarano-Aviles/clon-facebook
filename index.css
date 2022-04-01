@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #f0f2f5;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 25px;
+}
+/* Parte de imagen y parte texto */
+.container .faceInfo h2{
+   font-size: 15px;
+   margin: 5px;
+   text-align: center; 
+}
+/* fin da parte de imagen y parte texto */
+/* formulario */
+.elformulario p{
+    margin: 20px 10px;
+}
+.elformulario p span{
+    font-weight: bold;
+}
+.formulario{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
+}
+.formulario input{
+    /* margin: 10px; */
+    padding-left: 10px;
+    width: 90%;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0 ;
+    outline-color: #1877f2;
+    
+}
+.formulario button{
+    width: 91%;
+    margin: 10px 0;
+    height: 45px;
+    font-size: 20px;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid ;
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: 600;
+   /*  margin: 10px; */
+}
+.formulario button:hover{
+    cursor: pointer;
+}
+.formulario .olvidoContraseña{
+    margin: 20px 0;
+    color: #1877f2;
+    text-decoration: none;
+
+}
+.formulario .linea{
+    margin: 10px 0;
+    border: 1px solid #eef0f1;
+    width: 91%;
+}
+.formulario .nuevaCuenta{
+    margin: 20px;
+    background-color: #42b72a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 15px;
+}
+/* FIN  FORMULARIO  */
+@media (min-width:768px){
+    .container .faceInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .faceInfo img{
+        width: 60%;
+    }
+    .container .faceInfo h2{
+        font-size:larger;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:1024px){
+    body{
+        height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container .faceInfo{
+        width: 30%;
+        align-items: flex-start;
+        flex-basis: 40%;
+        margin-right: 100px;
+        margin-bottom: 200px;
+    }
+    .container .faceInfo h2{
+        font-weight: 200;
+        margin-left: 25px;
+        font-size: 28px;
+        font-weight: normal;
+        text-align: left;
+
+    }
+    .container .elformulario{
+        width: 25%;
+    }
+    .container .formulario input{
+        height: 50px;
+    }
+}
